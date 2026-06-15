@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Red+Hat+Text:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a0518;
+    color: #ffffff;
+    font-family: 'Outfit', 'Red Hat Text', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom Selection styling */
+  ::selection {
+    background-color: rgba(244, 63, 94, 0.3);
+    color: #ffffff;
+  }
+}
+
+/* Custom Utilities */
+.mask-gradient-bottom {
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+}
+
+/* Custom scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06020f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b152d;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #281d45;
+}
